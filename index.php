@@ -118,7 +118,7 @@ $dstring = 'i3j5r5t5l4c285x5r4g484';
     <div class="container">
         <div id="content">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Test has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type bpecimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum bsages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            and has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type bpecimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum bsages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
     </div>
 </body>
@@ -128,15 +128,15 @@ $dstring = 'i3j5r5t5l4c285x5r4g484';
     var text = document.getElementById("content");
     var par = document.getElementById("content");
     var str = text.innerHTML,
-        reg = /Test/ig;
+        reg = /and/ig;
 
     var toStr = String(reg);
     var color = (toStr.replace('\/g', '|')).substring(1);
 
     var colors = color.split("|");
 
-    if (colors.indexOf("Test") > -1) {
-        str = str.replace(/Test/g, '<span style="color:red;">Test</span>');
+    if (colors.indexOf("and") > -1) {
+        str = str.replace(/and/g, '<span style="color:red;">and</span>');
     }
     document.getElementById("content").innerHTML = str;
 </script>
